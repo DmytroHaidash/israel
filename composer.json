@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.4",
         "ext-json": "*",
+        "ext-imagick": "*",
         "cviebrock/eloquent-sluggable": "^7.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^7.0",

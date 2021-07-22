@@ -43,7 +43,6 @@
 
     <div class="footer-dev">
         <div class="footer-dev__item small">
-            ©{{ date('Y') }} @lang('common.footer.copy')
         </div>
         <div class="footer-dev__item">
             <div class="footer-social d-flex align-items-center justify-content-around">
@@ -53,8 +52,5 @@
                 <a href="{{app('settings')->telegram}}">TELEGRAM</a>
             </div>
         </div>
-{{--        <div class="footer-dev__item text-xl-right">--}}
-{{--            <a href="https://impressionbureau.pro">@lang('common.footer.dev') <span>Impression Bureau</span></a>--}}
-{{--        </div>--}}
     </div>
 </footer>

@@ -49,7 +49,8 @@
       const langs = {
         ru: 'Русский',
         uk: 'Українська',
-        en: 'English'
+        en: 'English',
+        he: 'Hebrew'
       };
       this.langs = this.locales.map(l => {
         return langs[l];

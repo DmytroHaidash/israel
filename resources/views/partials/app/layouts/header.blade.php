@@ -70,8 +70,8 @@
         @endif
     </div>
 
-    <button class="btn btn-flag modal-btn text-uppercase">
+   {{-- <button class="btn btn-flag modal-btn text-uppercase">
         @lang('common.main.appointments')
-    </button>
+    </button>--}}
     @include('partials.app.layouts.appointments-form')
 </header>
