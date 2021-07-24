@@ -17,7 +17,7 @@ class PagesTableSeeder extends Seeder
                 'slug' => 'service'
             ],*/
             [
-                'title' => 'Наш центр',
+                'title' => 'О нас',
                 'slug' => 'about'
             ],
            /* [
@@ -25,11 +25,11 @@ class PagesTableSeeder extends Seeder
                 'slug' => 'method'
             ],*/
             [
-                'title' => 'Напрямки роботи',
+                'title' => 'Проекты',
                 'slug' => 'direction'
             ],
             [
-                'title' => 'Питання та відповіді',
+                'title' => 'Вопросы и ответы',
                 'slug' => 'question'
             ],
             [
@@ -37,7 +37,7 @@ class PagesTableSeeder extends Seeder
                 'slug' => 'contacts'
             ],
             [
-                'title' => 'Відгуки',
+                'title' => 'Отзывы',
                 'slug' => 'reviews',
             ]
         ];
