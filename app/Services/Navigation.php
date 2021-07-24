@@ -26,21 +26,21 @@ class Navigation
                 'route' => 'articles',
                 'icon' => 'i-newspaper',
             ]),
-            new NavItem([
+           /* new NavItem([
                 'name' => 'Отделения',
                 'route' => 'categories',
                 'icon' => 'i-bullet-list',
-            ]),
+            ]),*/
             new NavItem([
-                'name' => 'Методы лечения',
+                'name' => 'Проекты',
                 'route' => 'directions',
                 'icon' => 'i-grid',
             ]),
-            new NavItem([
+            /*new NavItem([
                 'name' => 'Услуги',
                 'route' => 'services',
                 'icon' => 'i-bullet-list',
-            ]),
+            ]),*/
             new NavItem([
                 'name' => 'Наша команда',
                 'route' => 'commands',
