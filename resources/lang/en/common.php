@@ -40,7 +40,7 @@ return [
         'questions' => 'FAQ',
         'blog' => 'News',
         'contacts' => 'Contacts',
-        'copy' => 'КНП «Міська лікарня екстреної та швидкої медичної допомоги» ЗМР',
+        'copy' => '',
         'dev' => 'Development',
     ],
     'menu' => [

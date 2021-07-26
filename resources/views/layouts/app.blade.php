@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="title" content="{{ (isset($page_title) ? $page_title . ' | ' : '') . config('app.name') }}">
-    <meta name="description" content="{{ __('common.footer.copy') }}">
+   {{-- <meta name="description" content="{{ __('common.footer.copy') }}">--}}
     <meta name="og:title" content="{{ (isset($page_title) ? $page_title . ' | ' : '') . config('app.name') }}">
-    <meta name="og:description" content="{{ __('common.footer.copy') }}">
+    {{--<meta name="og:description" content="{{ __('common.footer.copy') }}">--}}
     <meta name="og:image" content="{{ asset('images/logo.png') }}">
     <meta name="og:image:width" content="520">
     <meta name="og:image:height" content="520">
