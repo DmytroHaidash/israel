@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Category;
+use App\Models\Direction;
 use App\Models\Setting;
 use App\Services\Navigation;
 use Illuminate\Support\Facades\Schema;
@@ -43,7 +44,7 @@ class AppServiceProvider extends ServiceProvider
                 return $l !== app()->getLocale();
             }));
 
-            View::share('departments', Category::where('published', 1)->get());
+            View::share('departments', Direction::where('published', 1)->get());
         });
 
         View::composer(['admin.commands.*', 'admin.directions.*', 'admin.services.*'], function() {
