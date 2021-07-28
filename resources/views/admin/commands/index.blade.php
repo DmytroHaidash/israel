@@ -5,7 +5,7 @@
     <div class="d-flex align-items-center mb-5">
         <h1 class="mb-0 h2">Наша комманда</h1>
         <div class="ml-3">
-            <a href="{{ route('admin.commands.create') }}" class="btn btn-primary">Добавить работника</a>
+            <a href="{{ route('admin.commands.create') }}" class="btn btn-primary">Добавить запись</a>
         </div>
     </div>
     @forelse($commands as $command)
@@ -61,7 +61,7 @@
             </div>
         </article>
     @empty
-        Работников пока нет!
+        В комманде пока никого пока нет!
     @endforelse
     {{ $commands->links() }}
 @endsection

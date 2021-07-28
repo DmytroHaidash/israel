@@ -2306,7 +2306,6 @@ var locales = JSON.parse(document.head.querySelector('[name="locales"]').content
   mounted: function mounted() {
     var langs = {
       ru: 'Русский',
-      uk: 'Українська',
       en: 'English',
       he: 'Hebrew'
     };

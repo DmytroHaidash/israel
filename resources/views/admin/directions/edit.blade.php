@@ -25,22 +25,22 @@
                                     </div>
                                 @endif
                             </div>
-                            <label for="body">Текст метода лечения</label>
+                            <label for="body">Текст</label>
                             <wysiwyg class="mb-0" id="body"
                                      content="{{ old('body') ?? $direction->translate('content', $lang)['body'] }}"
                                      name="{{$lang}}[content][body]"
-                                     label="Текст метода лечения"></wysiwyg>
+                                     label="Текст"></wysiwyg>
                         </fieldset>
 
                     @endforeach
                 </block-editor>
 
                 <div class="form-group mt-3">
-                    <label for="category_id">Отделения</label>
+                    <label for="category_id">Проекты</label>
                     <select class="form-control position-relative" name="categories[]" id="category_id"
                             multiple
                             required>
-                        <option value="" disabled selected style='display:none;'>Выберите одно или несколько отделений
+                        <option value="" disabled selected style='display:none;'>Выберите один или несколько проектов
                         </option>
                         @foreach($categories as $category)
                             <option

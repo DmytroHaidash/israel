@@ -14,7 +14,7 @@
                             <div class="areas-col">
                                 @endif
                                 <a href="{{route('app.directions.show', $category)}}" class="areas-item lozad"
-                                   data-background-image="{{$category->getFirstMediaUrl('direction', 'preview')}}">
+                                   data-background-image="{{$category->getFirstMediaUrl('category', 'preview')}}">
                                     <div class="areas-item__content">
                                         <h6 class="title">{{ $category->title }}</h6>
                                         <div class="content">

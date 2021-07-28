@@ -1,4 +1,4 @@
-@extends('layouts.admin', ['app_title' => 'Новое направление работы'])
+@extends('layouts.admin', ['app_title' => 'Новая статья'])
 
 @section('content')
     <section>
@@ -7,7 +7,7 @@
 
             <div class="row">
                 <div class="col-md-8">
-                    <block-editor title="Новый метод лечения">
+                    <block-editor title="Новая статья">
                         @foreach(config('app.locales') as $lang)
 
                             <fieldset slot="{{ $lang }}">
@@ -25,20 +25,20 @@
                                         </div>
                                     @endif
                                 </div>
-                                <label for="body">Текст метода лечения</label>
+                                <label for="body">Текст</label>
                                 <wysiwyg class="mb-0" id="body"
                                          content="{{ old('body') }}"
                                          name="{{$lang}}[content][body]"
-                                         label="Текст метода лечения"></wysiwyg>
+                                         label="Текст"></wysiwyg>
                             </fieldset>
 
                         @endforeach
                     </block-editor>
 
                     <div class="form-group mt-3">
-                        <label for="category_id">Отделения</label>
+                        <label for="category_id">Проекты</label>
                         <select class="form-control position-relative" name="categories[]" id="category_id" multiple required>
-                            <option value="" disabled selected style='display:none;'>Выберите одно или несколько отделений</option>
+                            <option value="" disabled selected style='display:none;'>Выберите один или несколько проектов</option>
                             @foreach($categories as $category)
                                 <option value="{{ $category->id }}"
                                     {{ in_array($category->id, old('categories', [])) ? ' selected' : '' }}

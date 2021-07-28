@@ -1,12 +1,12 @@
-@extends('layouts.admin', ['app_title' => 'Отделения'])
+@extends('layouts.admin', ['app_title' => 'Проекты'])
 
 @section('content')
 
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Отделения</h1>
+        <h1 class="mb-0 h2">Проекты</h1>
         <div class="ml-3">
             <a href="{{ route('admin.categories.create') }}" class="btn btn-primary">
-                Добавить отделение
+                Добавить проект
             </a>
         </div>
     </div>
@@ -59,7 +59,7 @@
             </div>
         </article>
     @empty
-        Отделения пока не созданы!
+        Проекты пока не созданы!
     @endforelse
     {{ $categories->links() }}
 @endsection

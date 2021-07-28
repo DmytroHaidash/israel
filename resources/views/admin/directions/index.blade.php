@@ -1,12 +1,12 @@
-@extends('layouts.admin', ['app_title' => 'Методы лечения'])
+@extends('layouts.admin', ['app_title' => 'Статьи к проектам'])
 
 @section('content')
 
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Методы лечения</h1>
+        <h1 class="mb-0 h2">Статьи к проектам</h1>
         <div class="ml-3">
             <a href="{{ route('admin.directions.create') }}" class="btn btn-primary">
-                Создать новое направление работы
+                Создать новую статью
             </a>
         </div>
     </div>
@@ -57,7 +57,7 @@
             </div>
         </article>
     @empty
-        Методы лечения пока не созданы!
+        Статьи к проектам пока не созданы пока не созданы!
     @endforelse
     {{ $directions->links() }}
 @endsection

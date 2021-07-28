@@ -44,7 +44,7 @@ class AppServiceProvider extends ServiceProvider
                 return $l !== app()->getLocale();
             }));
 
-            View::share('departments', Direction::where('published', 1)->get());
+            View::share('departments', Category::where('published', 1)->get());
         });
 
         View::composer(['admin.commands.*', 'admin.directions.*', 'admin.services.*'], function() {

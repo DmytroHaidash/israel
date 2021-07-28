@@ -48,7 +48,6 @@
     mounted() {
       const langs = {
         ru: 'Русский',
-        uk: 'Українська',
         en: 'English',
         he: 'Hebrew'
       };

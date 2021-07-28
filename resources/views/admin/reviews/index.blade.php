@@ -56,7 +56,7 @@
             </div>
         </article>
     @empty
-        Работников пока нет!
+        Отзывов пока нет!
     @endforelse
     {{ $reviews->links() }}
 @endsection

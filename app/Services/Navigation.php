@@ -26,13 +26,13 @@ class Navigation
                 'route' => 'articles',
                 'icon' => 'i-newspaper',
             ]),
-           /* new NavItem([
-                'name' => 'Отделения',
-                'route' => 'categories',
-                'icon' => 'i-bullet-list',
-            ]),*/
             new NavItem([
                 'name' => 'Проекты',
+                'route' => 'categories',
+                'icon' => 'i-bullet-list',
+            ]),
+            new NavItem([
+                'name' => 'Статьи к проектам',
                 'route' => 'directions',
                 'icon' => 'i-grid',
             ]),

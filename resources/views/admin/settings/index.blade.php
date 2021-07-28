@@ -129,14 +129,14 @@
                 ></multi-uploader>
             </fieldset>
 
-            <fieldset class="my-4">
+            {{--<fieldset class="my-4">
                 <label for="banner">Награды</label>
                 <multi-uploader
                     class="mt-4"
                     route="{{ route('admin.settings.images', ['collection' => 'awards']) }}"
                     :src="{{ json_encode($setting->getImagesList('awards')) }}"
                 ></multi-uploader>
-            </fieldset>
+            </fieldset>--}}
 
             <fieldset class="my-4 col-md-4 col-lg-3 px-0">
                 <label for="feedback">Изображение формы записи</label>

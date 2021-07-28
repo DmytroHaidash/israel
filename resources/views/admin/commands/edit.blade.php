@@ -51,12 +51,12 @@
                     </block-editor>
 
                     <div class="form-group mt-3">
-                        <label for="category_id">Отделения</label>
+                        <label for="category_id">Проекты</label>
                         <select class="form-control position-relative" name="categories[]" id="category_id"
                                 multiple
                                 required>
-                            <option value="" disabled selected style='display:none;'>Выберите одно или несколько
-                                отделений
+                            <option value="" disabled selected style='display:none;'>Выберите один или несколько
+                                проектов
                             </option>
                             @foreach($categories as $category)
                                 <option
