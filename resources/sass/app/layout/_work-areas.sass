@@ -102,13 +102,12 @@ section.work-areas-section
             width: 50%
         @media (min-width: map_get($grid-breakpoints, xl))
             padding: 4px
-            width: 33.3333%
 
         &:nth-of-type(1)
             .areas-item
                 min-height: 200px
                 @media (min-width: map_get($grid-breakpoints, lg))
-                    min-height: 250px
+                    min-height: 350px
 
                 .list
                     li
@@ -120,7 +119,7 @@ section.work-areas-section
                 &:last-child
                     min-height: 200px
                     @media (min-width: map_get($grid-breakpoints, lg))
-                        min-height: 350px
+                        min-height: 500px
 
                     .list
                         li
@@ -133,13 +132,13 @@ section.work-areas-section
                 .areas-item
                     min-height: 350px
             @media (min-width: map_get($grid-breakpoints, xl))
-                width: 33.3333%
+                width: 50%
                 flex-direction: column
                 .areas-item
-                    min-height: 350px
+                    min-height: 500px
 
                     &:last-child
-                        min-height: 250px
+                        min-height: 350px
 
 .areas-title
     position: relative
